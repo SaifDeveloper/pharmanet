@@ -1,0 +1,49 @@
+{
+    "name": "pharmaNetwork-org${ORG}",
+    "version": "1.0.0",
+    "client": {
+        "organization": "${ORG}",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300"
+                }
+            }
+        }
+    },
+    "organizations": {
+        "Org${ORG}": {
+            "mspid": "${MSP}",
+            "peers": [
+                "peer0.${ORG}.pharma.net"
+            ],
+            "certificateAuthorities": [
+                "ca-${ORG}"
+            ]
+        }
+    },
+    "peers": {
+        "peer0.${ORG}.pharma.net": {
+            "url": "grpcs://localhost:${P0PORT}",
+            "tlsCACerts": {
+                "pem": "${PEERPEM}"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "peer0.${ORG}.pharma.net",
+                "hostnameOverride": "peer0.${ORG}.pharma.net"
+            }
+        }
+    },
+    "certificateAuthorities": {
+        "ca-${ORG}": {
+            "url": "https://localhost:${CAPORT}",
+            "caName": "ca-${ORG}",
+            "tlsCACerts": {
+                "pem": ["${CAPEM}"]
+            },
+            "httpOptions": {
+                "verify": false
+            }
+        }
+    }
+}
