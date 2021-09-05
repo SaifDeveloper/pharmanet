@@ -35,7 +35,7 @@ CAPEM=organizations/peerOrganizations/manufacturer.pharma.net/ca/ca.manufacturer
 MSP=ManufacturerMSP
 
 echo "$(json_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM $MSP)" > organizations/peerOrganizations/manufacturer.pharma.net/connection-manufacturer.json
-echo "$(yaml_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM $MSP)" > organizations/peerOrganizations/manufacturer.pharma.net/connection-manufacturer.yaml
+# echo "$(yaml_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM $MSP)" > organizations/peerOrganizations/manufacturer.pharma.net/connection-manufacturer.yaml
 
 ORG=distributor
 P0PORT=9051
@@ -45,7 +45,7 @@ PEERPEM=organizations/peerOrganizations/distributor.pharma.net/tlsca/tlsca.distr
 CAPEM=organizations/peerOrganizations/distributor.pharma.net/ca/ca.distributor.pharma.net-cert.pem
 
 echo "$(json_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM $MSP)" > organizations/peerOrganizations/distributor.pharma.net/connection-distributor.json
-echo "$(yaml_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM $MSP)" > organizations/peerOrganizations/distributor.pharma.net/connection-distributor.yaml
+# echo "$(yaml_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM $MSP)" > organizations/peerOrganizations/distributor.pharma.net/connection-distributor.yaml
 
 ORG=retailer
 P0PORT=11051
@@ -55,7 +55,7 @@ PEERPEM=organizations/peerOrganizations/retailer.pharma.net/tlsca/tlsca.retailer
 CAPEM=organizations/peerOrganizations/retailer.pharma.net/ca/ca.retailer.pharma.net-cert.pem
 
 echo "$(json_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM $MSP)" > organizations/peerOrganizations/retailer.pharma.net/connection-retailer.json
-echo "$(yaml_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM $MSP)" > organizations/peerOrganizations/retailer.pharma.net/connection-retailer.yaml
+# echo "$(yaml_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM $MSP)" > organizations/peerOrganizations/retailer.pharma.net/connection-retailer.yaml
 
 ORG=consumer
 P0PORT=13051
@@ -65,7 +65,7 @@ PEERPEM=organizations/peerOrganizations/consumer.pharma.net/tlsca/tlsca.consumer
 CAPEM=organizations/peerOrganizations/consumer.pharma.net/ca/ca.consumer.pharma.net-cert.pem
 
 echo "$(json_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM $MSP)" > organizations/peerOrganizations/consumer.pharma.net/connection-consumer.json
-echo "$(yaml_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM $MSP)" > organizations/peerOrganizations/consumer.pharma.net/connection-consumer.yaml
+# echo "$(yaml_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM $MSP)" > organizations/peerOrganizations/consumer.pharma.net/connection-consumer.yaml
 
 ORG=transporter
 P0PORT=15051
@@ -75,4 +75,4 @@ PEERPEM=organizations/peerOrganizations/transporter.pharma.net/tlsca/tlsca.trans
 CAPEM=organizations/peerOrganizations/transporter.pharma.net/ca/ca.transporter.pharma.net-cert.pem
 
 echo "$(json_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM $MSP)" > organizations/peerOrganizations/transporter.pharma.net/connection-transporter.json
-echo "$(yaml_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM $MSP)" > organizations/peerOrganizations/transporter.pharma.net/connection-transporter.yaml
+# echo "$(yaml_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM $MSP)" > organizations/peerOrganizations/transporter.pharma.net/connection-transporter.yaml

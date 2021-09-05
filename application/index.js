@@ -221,4 +221,4 @@ app.post("/viewCurrentState", (req, res) => {
     });
 });
 
-app.listen(port, () => console.log(`Distributed Pharma App listening on port ${port}!`));
+app.listen(port, () => console.log(`Pharmanet Client Application listening on port ${port}!`));

@@ -60,7 +60,7 @@ async function enrolAdmin(ccpPath,caName,msp){
             type: 'X.509',
         };
         await wallet.put(org_admin, x509Identity);
-        console.log('Successfully enrolled admin user "admin" and imported it into the wallet');
+        console.log(`Successfully enrolled admin user "admin" and imported it into the wallet for ${msp}`);
 
     } catch (error) {
         console.error(`Failed to enroll admin user "admin": ${error}`);

@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"nameOfOrg\": \"customer\",\n    \"drugName\": \"Paracetamol\",\n    \"serialNo\": \"001\",\n    \"retailerCRN\": \"RET002\",\n    \"customerAadhar\":\"AAD001\"\n}\n",
+					"raw": "{\n    \"nameOfOrg\": \"consumer\",\n    \"drugName\": \"Paracetamol\",\n    \"serialNo\": \"001\",\n    \"retailerCRN\": \"RET002\",\n    \"customerAadhar\":\"AAD001\"\n}\n",
 					"options": {
 						"raw": {
 							"language": "json"
