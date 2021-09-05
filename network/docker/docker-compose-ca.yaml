@@ -11,7 +11,7 @@ networks:
 services:
 
   ca_manufacturer:
-    image: hyperledger/fabric-ca:$IMAGE_TAG
+    image: hyperledger/fabric-ca:1.5.0
     environment:
       - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
       - FABRIC_CA_SERVER_CA_NAME=ca-manufacturer
@@ -27,7 +27,7 @@ services:
       - test
 
   ca_distributor:
-    image: hyperledger/fabric-ca:$IMAGE_TAG
+    image: hyperledger/fabric-ca:1.5.0
     environment:
       - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
       - FABRIC_CA_SERVER_CA_NAME=ca-distributor
@@ -43,7 +43,7 @@ services:
       - test
 
   ca_retailer:
-    image: hyperledger/fabric-ca:$IMAGE_TAG
+    image: hyperledger/fabric-ca:1.5.0
     environment:
       - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
       - FABRIC_CA_SERVER_CA_NAME=ca-retailer
@@ -59,7 +59,7 @@ services:
       - test
 
   ca_consumer:
-    image: hyperledger/fabric-ca:$IMAGE_TAG
+    image: hyperledger/fabric-ca:1.5.0
     environment:
       - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
       - FABRIC_CA_SERVER_CA_NAME=ca-consumer
@@ -75,7 +75,7 @@ services:
       - test
   
   ca_transporter:
-    image: hyperledger/fabric-ca:$IMAGE_TAG
+    image: hyperledger/fabric-ca:1.5.0
     environment:
       - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
       - FABRIC_CA_SERVER_CA_NAME=ca-transporter
@@ -91,7 +91,7 @@ services:
       - test
 
   ca_orderer:
-    image: hyperledger/fabric-ca:$IMAGE_TAG
+    image: hyperledger/fabric-ca:1.5.0
     environment:
       - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
       - FABRIC_CA_SERVER_CA_NAME=ca-orderer

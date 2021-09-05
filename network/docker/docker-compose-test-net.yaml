@@ -22,7 +22,7 @@ services:
 
   orderer.pharma.net:
     container_name: orderer.pharma.net
-    image: hyperledger/fabric-orderer:$IMAGE_TAG
+    image: hyperledger/fabric-orderer:2.2.3
     environment:
       - FABRIC_LOGGING_SPEC=INFO
       - ORDERER_GENERAL_LISTENADDRESS=0.0.0.0
@@ -55,7 +55,7 @@ services:
 
   peer0.manufacturer.pharma.net:
     container_name: peer0.manufacturer.pharma.net
-    image: hyperledger/fabric-peer:$IMAGE_TAG
+    image: hyperledger/fabric-peer:2.2.3
     environment:
       #Generic peer variables
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -93,7 +93,7 @@ services:
 
   peer0.distributor.pharma.net:
     container_name: peer0.distributor.pharma.net
-    image: hyperledger/fabric-peer:$IMAGE_TAG
+    image: hyperledger/fabric-peer:2.2.3
     environment:
       #Generic peer variables
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -131,7 +131,7 @@ services:
 
   peer0.retailer.pharma.net:
     container_name: peer0.retailer.pharma.net
-    image: hyperledger/fabric-peer:$IMAGE_TAG
+    image: hyperledger/fabric-peer:2.2.3
     environment:
       #Generic peer variables
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -169,7 +169,7 @@ services:
 
   peer0.consumer.pharma.net:
     container_name: peer0.consumer.pharma.net
-    image: hyperledger/fabric-peer:$IMAGE_TAG
+    image: hyperledger/fabric-peer:2.2.3
     environment:
       #Generic peer variables
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -207,7 +207,7 @@ services:
 
   peer0.transporter.pharma.net:
     container_name: peer0.transporter.pharma.net
-    image: hyperledger/fabric-peer:$IMAGE_TAG
+    image: hyperledger/fabric-peer:2.2.3
     environment:
       #Generic peer variables
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -245,7 +245,7 @@ services:
 
   peer1.manufacturer.pharma.net:
     container_name: peer1.manufacturer.pharma.net
-    image: hyperledger/fabric-peer:$IMAGE_TAG
+    image: hyperledger/fabric-peer:2.2.3
     environment:
       #Generic peer variables
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -283,7 +283,7 @@ services:
 
   peer1.distributor.pharma.net:
     container_name: peer1.distributor.pharma.net
-    image: hyperledger/fabric-peer:$IMAGE_TAG
+    image: hyperledger/fabric-peer:2.2.3
     environment:
       #Generic peer variables
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -321,7 +321,7 @@ services:
 
   peer1.retailer.pharma.net:
     container_name: peer1.retailer.pharma.net
-    image: hyperledger/fabric-peer:$IMAGE_TAG
+    image: hyperledger/fabric-peer:2.2.3
     environment:
       #Generic peer variables
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -359,7 +359,7 @@ services:
 
   peer1.consumer.pharma.net:
     container_name: peer1.consumer.pharma.net
-    image: hyperledger/fabric-peer:$IMAGE_TAG
+    image: hyperledger/fabric-peer:2.2.3
     environment:
       #Generic peer variables
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -397,7 +397,7 @@ services:
 
   peer1.transporter.pharma.net:
     container_name: peer1.transporter.pharma.net
-    image: hyperledger/fabric-peer:$IMAGE_TAG
+    image: hyperledger/fabric-peer:2.2.3
     environment:
       #Generic peer variables
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -436,7 +436,7 @@ services:
 
   cli:
     container_name: cli
-    image: hyperledger/fabric-tools:$IMAGE_TAG
+    image: hyperledger/fabric-tools:2.2.3
     tty: true
     stdin_open: true
     environment:
